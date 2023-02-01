@@ -16,11 +16,10 @@ function Todo({todo, toggleComplete, removeTodo}) {
             <input type="checkbox" onClick={handleCheckboxClick} />
             <li
                 style={{
-                    color: "white",
                     textDecoration: todo.completed ? "line-through" : null
                 }}
             >
-                {todo.task}
+                {todo.task} {/*print the content of task*/}
             </li>
             <button onClick={handleRemoveClick}>X</button>
         </div>
